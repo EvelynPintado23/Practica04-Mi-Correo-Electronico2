@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <link rel='stylesheet' href='../../../css/estilos.css' type= 'text/css'/>
+
+ <a href="indexUsuario.php">Inicio</a>  
+ <a href="enviarMensaje.html">Mensaje Nuevo</a>    
+ <a href="mensajesEnviados.php">Mensajes Enviados</a>
+ <a href="micuenta.php">Mi cuenta</a>
+ <a href="../../../config/cerrar_sesion.php">Cerrar Sesion</a>
+</head>
+<body>
+ <form id="formulario02" method="POST" action="../../controladores/usuario/enviarMensaje.php">
+ 
+ <label for="destino">Para: </label>
+ <input type="text" id="destino" name="destino" value="" placeholder="usuario@correo.com.."
+required/>
+ <br>
+ <label for="asunto">Asunto</label>
+ <input type="text" id="asunto" name="asunto" value="" placeholder="" required/>
+ <br>
+ <label for="mensaje">Mensaje</label>
+ <input type="text" id="mensaje" name="mensaje" value="" placeholder="" required/>
+ <br>
+ <input type="submit" id="enviar" name="enviar" value="Enviar" />
+ <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
+ </form>
+</body>
+</html>
